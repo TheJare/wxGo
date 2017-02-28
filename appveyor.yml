@@ -6,6 +6,7 @@ environment:
   matrix:
   - GOROOT: c:\go16
   - GOROOT: c:\go17
+  - GOROOT: c:\go18
 
 matrix:
   allow_failures:
@@ -16,7 +17,7 @@ build_script:
 
     set GOPATH=c:\project\
 
-    set PATH=c:\msys64\mingw64\bin;%GOROOT%\bin;%PATH%
+    set PATH=C:\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\bin;%GOROOT%\bin;%PATH%
 
     go env
 
